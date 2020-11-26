@@ -630,7 +630,7 @@ def confusion_matrix(samples, pred, target):
 
 
 #optimizer = optim.SGD(flow.parameters(), lr=0.00003, momentum=0.9)
-optimizer = optim.SGD(rgb.parameters(), lr=0.0000001, momentum=0.5)
+optimizer = optim.SGD(flow.parameters(), lr=0.0000001, momentum=0.5)
 
 # In[ ]:
 
@@ -677,8 +677,8 @@ for epoch in range(100):  # loop over the dataset multiple times
     s2 = time.time()    
     print(f"Time taken for {epoch + 1} epoch : {s2-s1}\n\n\n ")
 
-    dump("FlowModel.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V1/FlowModel_{offset + epoch + 1}.pkl",flow)
-    dump_pickle("FlowModelLoss.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V1/FlowModel_Loss_{offset + epoch + 1}.pkl",loss)
+    dump("FlowModel.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V2/FlowModel_{offset + epoch + 1}.pkl",flow)
+    dump_pickle("FlowModelLoss.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V2/FlowModel_Loss_{offset + epoch + 1}.pkl",loss)
     plot_loss(t)
     
     if((epoch+1)%4 == 0):
