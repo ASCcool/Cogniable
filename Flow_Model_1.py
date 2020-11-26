@@ -629,8 +629,8 @@ def confusion_matrix(samples, pred, target):
 # In[15]:
 
 
-#optimizer = optim.SGD(flow.parameters(), lr=0.00003, momentum=0.9)
-optimizer = optim.SGD(flow.parameters(), lr=0.0000001, momentum=0.5)
+optimizer = optim.SGD(flow.parameters(), lr=0.00001, momentum=0.9)
+#optimizer = optim.SGD(flow.parameters(), lr=0.0000001, momentum=0.5)
 
 # In[ ]:
 
