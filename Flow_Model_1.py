@@ -5,7 +5,13 @@
 
 import logging
 
-logging.basicConfig(filename='output_final.log', encoding='utf-8', level=logging.INFO)
+#logging.basicConfig(filename='output_final.log', encoding='utf-8', level=logging.INFO)
+
+logging.basicConfig(handlers=[logging.FileHandler(filename="output_final.log", 
+                                                 encoding='utf-8', mode='a+')],
+                    format="%(asctime)s %(name)s:%(levelname)s:%(message)s", 
+                    datefmt="%F %A %T", 
+                    level=logging.INFO)
 
 import os, uuid
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
