@@ -3,6 +3,9 @@
 
 # In[1]:
 
+import logging
+
+logging.basicConfig(filename='output_final.log', encoding='utf-8', level=logging.INFO)
 
 import os, uuid
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
@@ -28,14 +31,14 @@ train_set = int(0.6 * len(dataset)) # 60% for training
 val_set = len(dataset) - train_set # 40% for validation
 train_data = dataset[:train_set]
 val_data = dataset[train_set:]
-print("Training data: ",train_data)
-print("Validation data: ",val_data)
-print("No of training data: ",len(train_data))
-print("No of validation data: ",len(val_data))
+logging.info("Training data: ",train_data)
+logging.info("Validation data: ",val_data)
+logging.info("No of training data: ",len(train_data))
+logging.info("No of validation data: ",len(val_data))
 
 def get_train_data(a):          
     data = train_data[a]
-    print(data)
+    logging.info(data)
     temp = io.BytesIO(bucket.download_blob(data).readall())
     temp1 = []
     temp1 = pickle.load(temp) 
@@ -43,7 +46,7 @@ def get_train_data(a):
 
 def get_val_data(a):          
     data = val_data[a]
-    print(data)
+    logging.info(data)
     temp = io.BytesIO(bucket.download_blob(data).readall())
     temp1 = []
     temp1 = pickle.load(temp) 
@@ -387,16 +390,16 @@ class I3D(nn.Module):
 
 
 def get_model_flow(a = ''):
-    print(a)
+    logging.info(a)
     blob_list = bucket.list_blobs(name_starts_with="Final_Binary_Classification_Dataset/Flow_Model/")
     path = ""
     for blob in blob_list:      
         if (a != '') and blob.name == f"Final_Binary_Classification_Dataset/Flow_Model/FlowModel_{a}.pkl":
           path = blob.name
-          print(path)
+          logging.info(path)
           break
     if path == "":
-        print("Model Not found")
+        logging.info("Model Not found")
         return
     #temp= "RGB Model"   
     #file = bucket.download_blob(path)
@@ -404,7 +407,7 @@ def get_model_flow(a = ''):
     temp1 = I3D(num_classes= 2)
     temp1 = torch.nn.DataParallel(temp1)
     temp1.load_state_dict(torch.load(io.BytesIO(bucket.download_blob(path).readall()),map_location={'cuda:0':'cpu'}),strict=False)
-    print("Model State Dict:",temp1)
+    logging.info("Model State Dict:",temp1)
     return temp1   
 
 
@@ -510,7 +513,7 @@ def calculate_train_accuracy():
     flow.eval()
     tq = get_index(3)
     #random.shuffle(train_data)
-    print("Calculating train accuracy....") 
+    logging.info("Calculating train accuracy....") 
     with torch.no_grad():
       for j in tq:
           c = []
@@ -524,21 +527,21 @@ def calculate_train_accuracy():
               inp = inp.float()
               inp = inp.to(device)    
               outputs = list(flow(inp)[0][0])
-              print(outputs)  
+              logging.info(outputs)  
               c.append(outputs.index(max(outputs))) 
           for i in range(len(c)):
               if (c[i]==y[i]):
                   count += 1
               else:
                   incorrect += 1 
-          print("Batch",j)
-          print("Accuracy="+str(count/(count+incorrect)))
-          print("Correctly classified : ",count)
-          print("Incorrectly classified", incorrect)  
-    print("\n\n\n\n")
-    print("Accuracy="+str(count/(count+incorrect)))
-    print("Correctly classified : ",count)
-    print("Incorrectly classified", incorrect)
+          logging.info("Batch",j)
+          logging.info("Accuracy="+str(count/(count+incorrect)))
+          logging.info("Correctly classified : ",count)
+          logging.info("Incorrectly classified", incorrect)  
+    logging.info("\n\n\n\n")
+    logging.info("Accuracy="+str(count/(count+incorrect)))
+    logging.info("Correctly classified : ",count)
+    logging.info("Incorrectly classified", incorrect)
 
     return samples, c, y
 
@@ -557,7 +560,7 @@ def calculate_test_accuracy():
     tq = get_index(2)
     confusion_matrix = torch.zeros(2, 2)
     #random.shuffle(val_data)
-    print("Calculating test accuracy....") 
+    logging.info("Calculating test accuracy....") 
     with torch.no_grad():
       for j in tq:
           c = []
@@ -577,16 +580,16 @@ def calculate_test_accuracy():
                   count += 1
               else:
                   incorrect += 1 
-          print("Batch",j)
-          print("Accuracy="+str(count/(count+incorrect)))
-          print("Correctly classified : ",count)
-          print("Incorrectly classified", incorrect)  
-    print("\n\n\n\n")
-    print("Accuracy="+str(count/(count+incorrect)))
-    print("Correctly classified : ",count)
-    print("Incorrectly classified", incorrect)
+          logging.info("Batch",j)
+          logging.info("Accuracy="+str(count/(count+incorrect)))
+          logging.info("Correctly classified : ",count)
+          logging.info("Incorrectly classified", incorrect)  
+    logging.info("\n\n\n\n")
+    logging.info("Accuracy="+str(count/(count+incorrect)))
+    logging.info("Correctly classified : ",count)
+    logging.info("Incorrectly classified", incorrect)
 
-    return samples
+    return samples, c, y
 
 
 # In[14]:
@@ -598,7 +601,7 @@ def confusion_matrix(samples, pred, target):
     for t, p in zip(target, pred):
         conf_matrix[t, p] += 1
 
-    print('Confusion matrix\n', conf_matrix)
+    logging.info('Confusion matrix\n', conf_matrix)
 
     TP = conf_matrix.diag()
     for c in range(nb_classes):
@@ -611,7 +614,7 @@ def confusion_matrix(samples, pred, target):
         # all class samples not classified as class
         FN = conf_matrix[c, idx].sum()
     
-        print('Class {}\nTP {}, TN {}, FP {}, FN {}'.format(
+        logging.info('Class {}\nTP {}, TN {}, FP {}, FN {}'.format(
             c, TP[c], TN, FP, FN))
 
         Sensitivity = TP[c]/(TP[c]+FN)
@@ -619,11 +622,11 @@ def confusion_matrix(samples, pred, target):
         Precision = TP[c]/(TP[c]+FP)
         Recall = TP[c]/(TP[c]+FN)
         F_Measure = (2 * Precision * Recall) / (Precision + Recall)
-        print('Sensitivity:', Sensitivity)
-        print('Specificity:', Specificity)
-        print('Precision:',Precision)
-        print('Recall:',Recall)
-        print('F-Measure:', F_Measure)
+        logging.info('Sensitivity:', Sensitivity)
+        logging.info('Specificity:', Specificity)
+        logging.info('Precision:',Precision)
+        logging.info('Recall:',Recall)
+        logging.info('F-Measure:', F_Measure)
 
 
 # In[15]:
@@ -644,12 +647,12 @@ for epoch in range(100):  # loop over the dataset multiple times
     epoch_loss = 0.0
     for j in tq:
       #path = get_path()
-      #print(path)
+      #logging.info(path)
       x,y = get_train_data(j)
       running_loss = 0.0      
       x,y = shuffle(x,y)
       y = get_labels(y)
-      #print(f"num of classes:{len(y)}")
+      #logging.info(f"num of classes:{len(y)}")
       for i in range(len(y)):
           a,b = x[i], y[i]
           optimizer.zero_grad()
@@ -664,27 +667,27 @@ for epoch in range(100):  # loop over the dataset multiple times
           optimizer.step()
           running_loss += loss.item()
           epoch_loss += loss.item()
-          #print(f"num of mini batches:{q}")
+          #logging.info(f"num of mini batches:{q}")
           if i % 3 == 0:            
-              print('[%d, %5d] loss: %.3f ' %(epoch + 1, i + 1, running_loss/3))
+              logging.info('[%d, %5d] loss: %.3f ' %(epoch + 1, i + 1, running_loss/3))
               t.append(running_loss / 3)
               running_loss = 0.0
               qw += 3
     
-    print('[%d] Epoch loss: %.3f ' %(epoch + 1, epoch_loss/qw))
+    logging.info('[%d] Epoch loss: %.3f ' %(epoch + 1, epoch_loss/qw))
     qw = 0
     #asd.append(epoch_loss / 1260)
     s2 = time.time()    
-    print(f"Time taken for {epoch + 1} epoch : {s2-s1}\n\n\n ")
+    logging.info(f"Time taken for {epoch + 1} epoch : {s2-s1}\n\n\n ")
 
-    dump("FlowModel.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V3/FlowModel_{offset + epoch + 1}.pkl",flow)
-    dump_pickle("FlowModelLoss.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V3/FlowModel_Loss_{offset + epoch + 1}.pkl",loss)
+    dump("FlowModel.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V6/FlowModel_{offset + epoch + 1}.pkl",flow)
+    dump_pickle("FlowModelLoss.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V6/FlowModel_Loss_{offset + epoch + 1}.pkl",loss)
     plot_loss(t)
     
     if((epoch+1)%4 == 0):
         samples, pred, tar = calculate_train_accuracy()
         confusion_matrix(samples, pred, tar)
-        samples = calculate_test_accuracy()
-        confusion_matrix(samples) 
+        samples, pred, tar = calculate_test_accuracy()
+        confusion_matrix(samples, pred, tar) 
 
-print('Finished Training')
+logging.info('Finished Training')
