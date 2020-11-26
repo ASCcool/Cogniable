@@ -1,0 +1,948 @@
+Training data:  ['Final_Combined_Model_Dataset/Modified_data_flow_V2/train_7.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_8.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_1.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_4.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_10.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl']
+Validation data:  ['Final_Combined_Model_Dataset/Modified_data_flow_V2/train_6.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_5.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_3.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_2.pkl']
+No of training data:  6
+No of validation data:  4
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_8.pkl
+[1,     1] loss: 0.189 
+[1,     4] loss: 0.980 
+[1,     7] loss: nan 
+[1,    10] loss: nan 
+[1,    13] loss: nan 
+[1,    16] loss: nan 
+[1,    19] loss: nan 
+[1,    22] loss: nan 
+[1,    25] loss: nan 
+[1,    28] loss: nan 
+[1,    31] loss: nan 
+[1,    34] loss: nan 
+[1,    37] loss: nan 
+[1,    40] loss: nan 
+[1,    43] loss: nan 
+[1,    46] loss: nan 
+[1,    49] loss: nan 
+[1,    52] loss: nan 
+[1,    55] loss: nan 
+[1,    58] loss: nan 
+[1,    61] loss: nan 
+[1,    64] loss: nan 
+[1,    67] loss: nan 
+[1,    70] loss: nan 
+[1,    73] loss: nan 
+[1,    76] loss: nan 
+[1,    79] loss: nan 
+[1,    82] loss: nan 
+[1,    85] loss: nan 
+[1,    88] loss: nan 
+[1,    91] loss: nan 
+[1,    94] loss: nan 
+[1,    97] loss: nan 
+[1,   100] loss: nan 
+[1,   103] loss: nan 
+[1,   106] loss: nan 
+[1,   109] loss: nan 
+[1,   112] loss: nan 
+[1,   115] loss: nan 
+[1,   118] loss: nan 
+[1,   121] loss: nan 
+[1,   124] loss: nan 
+[1,   127] loss: nan 
+[1,   130] loss: nan 
+[1,   133] loss: nan 
+[1,   136] loss: nan 
+[1,   139] loss: nan 
+[1,   142] loss: nan 
+[1,   145] loss: nan 
+[1,   148] loss: nan 
+[1,   151] loss: nan 
+[1,   154] loss: nan 
+[1,   157] loss: nan 
+[1,   160] loss: nan 
+[1,   163] loss: nan 
+[1,   166] loss: nan 
+[1,   169] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_7.pkl
+[1,     1] loss: nan 
+[1,     4] loss: nan 
+[1,     7] loss: nan 
+[1,    10] loss: nan 
+[1,    13] loss: nan 
+[1,    16] loss: nan 
+[1,    19] loss: nan 
+[1,    22] loss: nan 
+[1,    25] loss: nan 
+[1,    28] loss: nan 
+[1,    31] loss: nan 
+[1,    34] loss: nan 
+[1,    37] loss: nan 
+[1,    40] loss: nan 
+[1,    43] loss: nan 
+[1,    46] loss: nan 
+[1,    49] loss: nan 
+[1,    52] loss: nan 
+[1,    55] loss: nan 
+[1,    58] loss: nan 
+[1,    61] loss: nan 
+[1,    64] loss: nan 
+[1,    67] loss: nan 
+[1,    70] loss: nan 
+[1,    73] loss: nan 
+[1,    76] loss: nan 
+[1,    79] loss: nan 
+[1,    82] loss: nan 
+[1,    85] loss: nan 
+[1,    88] loss: nan 
+[1,    91] loss: nan 
+[1,    94] loss: nan 
+[1,    97] loss: nan 
+[1,   100] loss: nan 
+[1,   103] loss: nan 
+[1,   106] loss: nan 
+[1,   109] loss: nan 
+[1,   112] loss: nan 
+[1,   115] loss: nan 
+[1,   118] loss: nan 
+[1,   121] loss: nan 
+[1,   124] loss: nan 
+[1,   127] loss: nan 
+[1,   130] loss: nan 
+[1,   133] loss: nan 
+[1,   136] loss: nan 
+[1,   139] loss: nan 
+[1,   142] loss: nan 
+[1,   145] loss: nan 
+[1,   148] loss: nan 
+[1,   151] loss: nan 
+[1,   154] loss: nan 
+[1,   157] loss: nan 
+[1,   160] loss: nan 
+[1,   163] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_10.pkl
+[1,     1] loss: nan 
+[1,     4] loss: nan 
+[1,     7] loss: nan 
+[1,    10] loss: nan 
+[1,    13] loss: nan 
+[1,    16] loss: nan 
+[1,    19] loss: nan 
+[1,    22] loss: nan 
+[1,    25] loss: nan 
+[1,    28] loss: nan 
+[1,    31] loss: nan 
+[1,    34] loss: nan 
+[1,    37] loss: nan 
+[1,    40] loss: nan 
+[1,    43] loss: nan 
+[1,    46] loss: nan 
+[1,    49] loss: nan 
+[1,    52] loss: nan 
+[1,    55] loss: nan 
+[1,    58] loss: nan 
+[1,    61] loss: nan 
+[1,    64] loss: nan 
+[1,    67] loss: nan 
+[1,    70] loss: nan 
+[1,    73] loss: nan 
+[1,    76] loss: nan 
+[1,    79] loss: nan 
+[1,    82] loss: nan 
+[1,    85] loss: nan 
+[1,    88] loss: nan 
+[1,    91] loss: nan 
+[1,    94] loss: nan 
+[1,    97] loss: nan 
+[1,   100] loss: nan 
+[1,   103] loss: nan 
+[1,   106] loss: nan 
+[1,   109] loss: nan 
+[1,   112] loss: nan 
+[1,   115] loss: nan 
+[1,   118] loss: nan 
+[1,   121] loss: nan 
+[1,   124] loss: nan 
+[1,   127] loss: nan 
+[1,   130] loss: nan 
+[1,   133] loss: nan 
+[1,   136] loss: nan 
+[1,   139] loss: nan 
+[1,   142] loss: nan 
+[1,   145] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl
+[1,     1] loss: nan 
+[1,     4] loss: nan 
+[1,     7] loss: nan 
+[1,    10] loss: nan 
+[1,    13] loss: nan 
+[1,    16] loss: nan 
+[1,    19] loss: nan 
+[1,    22] loss: nan 
+[1,    25] loss: nan 
+[1,    28] loss: nan 
+[1,    31] loss: nan 
+[1,    34] loss: nan 
+[1,    37] loss: nan 
+[1,    40] loss: nan 
+[1,    43] loss: nan 
+[1,    46] loss: nan 
+[1,    49] loss: nan 
+[1,    52] loss: nan 
+[1,    55] loss: nan 
+[1,    58] loss: nan 
+[1,    61] loss: nan 
+[1,    64] loss: nan 
+[1,    67] loss: nan 
+[1,    70] loss: nan 
+[1,    73] loss: nan 
+[1,    76] loss: nan 
+[1,    79] loss: nan 
+[1,    82] loss: nan 
+[1,    85] loss: nan 
+[1,    88] loss: nan 
+[1,    91] loss: nan 
+[1,    94] loss: nan 
+[1,    97] loss: nan 
+[1,   100] loss: nan 
+[1,   103] loss: nan 
+[1] Epoch loss: nan 
+Time taken for 1 epoch : 895.9946501255035
+
+
+ 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl
+[2,     1] loss: nan 
+[2,     4] loss: nan 
+[2,     7] loss: nan 
+[2,    10] loss: nan 
+[2,    13] loss: nan 
+[2,    16] loss: nan 
+[2,    19] loss: nan 
+[2,    22] loss: nan 
+[2,    25] loss: nan 
+[2,    28] loss: nan 
+[2,    31] loss: nan 
+[2,    34] loss: nan 
+[2,    37] loss: nan 
+[2,    40] loss: nan 
+[2,    43] loss: nan 
+[2,    46] loss: nan 
+[2,    49] loss: nan 
+[2,    52] loss: nan 
+[2,    55] loss: nan 
+[2,    58] loss: nan 
+[2,    61] loss: nan 
+[2,    64] loss: nan 
+[2,    67] loss: nan 
+[2,    70] loss: nan 
+[2,    73] loss: nan 
+[2,    76] loss: nan 
+[2,    79] loss: nan 
+[2,    82] loss: nan 
+[2,    85] loss: nan 
+[2,    88] loss: nan 
+[2,    91] loss: nan 
+[2,    94] loss: nan 
+[2,    97] loss: nan 
+[2,   100] loss: nan 
+[2,   103] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_1.pkl
+[2,     1] loss: nan 
+[2,     4] loss: nan 
+[2,     7] loss: nan 
+[2,    10] loss: nan 
+[2,    13] loss: nan 
+[2,    16] loss: nan 
+[2,    19] loss: nan 
+[2,    22] loss: nan 
+[2,    25] loss: nan 
+[2,    28] loss: nan 
+[2,    31] loss: nan 
+[2,    34] loss: nan 
+[2,    37] loss: nan 
+[2,    40] loss: nan 
+[2,    43] loss: nan 
+[2,    46] loss: nan 
+[2,    49] loss: nan 
+[2,    52] loss: nan 
+[2,    55] loss: nan 
+[2,    58] loss: nan 
+[2,    61] loss: nan 
+[2,    64] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_4.pkl
+[2,     1] loss: nan 
+[2,     4] loss: nan 
+[2,     7] loss: nan 
+[2,    10] loss: nan 
+[2,    13] loss: nan 
+[2,    16] loss: nan 
+[2,    19] loss: nan 
+[2,    22] loss: nan 
+[2,    25] loss: nan 
+[2,    28] loss: nan 
+[2,    31] loss: nan 
+[2,    34] loss: nan 
+[2,    37] loss: nan 
+[2,    40] loss: nan 
+[2,    43] loss: nan 
+[2,    46] loss: nan 
+[2,    49] loss: nan 
+[2,    52] loss: nan 
+[2,    55] loss: nan 
+[2,    58] loss: nan 
+[2,    61] loss: nan 
+[2,    64] loss: nan 
+[2,    67] loss: nan 
+[2,    70] loss: nan 
+[2,    73] loss: nan 
+[2,    76] loss: nan 
+[2,    79] loss: nan 
+[2,    82] loss: nan 
+[2,    85] loss: nan 
+[2,    88] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_10.pkl
+[2,     1] loss: nan 
+[2,     4] loss: nan 
+[2,     7] loss: nan 
+[2,    10] loss: nan 
+[2,    13] loss: nan 
+[2,    16] loss: nan 
+[2,    19] loss: nan 
+[2,    22] loss: nan 
+[2,    25] loss: nan 
+[2,    28] loss: nan 
+[2,    31] loss: nan 
+[2,    34] loss: nan 
+[2,    37] loss: nan 
+[2,    40] loss: nan 
+[2,    43] loss: nan 
+[2,    46] loss: nan 
+[2,    49] loss: nan 
+[2,    52] loss: nan 
+[2,    55] loss: nan 
+[2,    58] loss: nan 
+[2,    61] loss: nan 
+[2,    64] loss: nan 
+[2,    67] loss: nan 
+[2,    70] loss: nan 
+[2,    73] loss: nan 
+[2,    76] loss: nan 
+[2,    79] loss: nan 
+[2,    82] loss: nan 
+[2,    85] loss: nan 
+[2,    88] loss: nan 
+[2,    91] loss: nan 
+[2,    94] loss: nan 
+[2,    97] loss: nan 
+[2,   100] loss: nan 
+[2,   103] loss: nan 
+[2,   106] loss: nan 
+[2,   109] loss: nan 
+[2,   112] loss: nan 
+[2,   115] loss: nan 
+[2,   118] loss: nan 
+[2,   121] loss: nan 
+[2,   124] loss: nan 
+[2,   127] loss: nan 
+[2,   130] loss: nan 
+[2,   133] loss: nan 
+[2,   136] loss: nan 
+[2,   139] loss: nan 
+[2,   142] loss: nan 
+[2,   145] loss: nan 
+[2] Epoch loss: nan 
+Time taken for 2 epoch : 612.5640089511871
+
+
+ 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_10.pkl
+[3,     1] loss: nan 
+[3,     4] loss: nan 
+[3,     7] loss: nan 
+[3,    10] loss: nan 
+[3,    13] loss: nan 
+[3,    16] loss: nan 
+[3,    19] loss: nan 
+[3,    22] loss: nan 
+[3,    25] loss: nan 
+[3,    28] loss: nan 
+[3,    31] loss: nan 
+[3,    34] loss: nan 
+[3,    37] loss: nan 
+[3,    40] loss: nan 
+[3,    43] loss: nan 
+[3,    46] loss: nan 
+[3,    49] loss: nan 
+[3,    52] loss: nan 
+[3,    55] loss: nan 
+[3,    58] loss: nan 
+[3,    61] loss: nan 
+[3,    64] loss: nan 
+[3,    67] loss: nan 
+[3,    70] loss: nan 
+[3,    73] loss: nan 
+[3,    76] loss: nan 
+[3,    79] loss: nan 
+[3,    82] loss: nan 
+[3,    85] loss: nan 
+[3,    88] loss: nan 
+[3,    91] loss: nan 
+[3,    94] loss: nan 
+[3,    97] loss: nan 
+[3,   100] loss: nan 
+[3,   103] loss: nan 
+[3,   106] loss: nan 
+[3,   109] loss: nan 
+[3,   112] loss: nan 
+[3,   115] loss: nan 
+[3,   118] loss: nan 
+[3,   121] loss: nan 
+[3,   124] loss: nan 
+[3,   127] loss: nan 
+[3,   130] loss: nan 
+[3,   133] loss: nan 
+[3,   136] loss: nan 
+[3,   139] loss: nan 
+[3,   142] loss: nan 
+[3,   145] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_1.pkl
+[3,     1] loss: nan 
+[3,     4] loss: nan 
+[3,     7] loss: nan 
+[3,    10] loss: nan 
+[3,    13] loss: nan 
+[3,    16] loss: nan 
+[3,    19] loss: nan 
+[3,    22] loss: nan 
+[3,    25] loss: nan 
+[3,    28] loss: nan 
+[3,    31] loss: nan 
+[3,    34] loss: nan 
+[3,    37] loss: nan 
+[3,    40] loss: nan 
+[3,    43] loss: nan 
+[3,    46] loss: nan 
+[3,    49] loss: nan 
+[3,    52] loss: nan 
+[3,    55] loss: nan 
+[3,    58] loss: nan 
+[3,    61] loss: nan 
+[3,    64] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_8.pkl
+[3,     1] loss: nan 
+[3,     4] loss: nan 
+[3,     7] loss: nan 
+[3,    10] loss: nan 
+[3,    13] loss: nan 
+[3,    16] loss: nan 
+[3,    19] loss: nan 
+[3,    22] loss: nan 
+[3,    25] loss: nan 
+[3,    28] loss: nan 
+[3,    31] loss: nan 
+[3,    34] loss: nan 
+[3,    37] loss: nan 
+[3,    40] loss: nan 
+[3,    43] loss: nan 
+[3,    46] loss: nan 
+[3,    49] loss: nan 
+[3,    52] loss: nan 
+[3,    55] loss: nan 
+[3,    58] loss: nan 
+[3,    61] loss: nan 
+[3,    64] loss: nan 
+[3,    67] loss: nan 
+[3,    70] loss: nan 
+[3,    73] loss: nan 
+[3,    76] loss: nan 
+[3,    79] loss: nan 
+[3,    82] loss: nan 
+[3,    85] loss: nan 
+[3,    88] loss: nan 
+[3,    91] loss: nan 
+[3,    94] loss: nan 
+[3,    97] loss: nan 
+[3,   100] loss: nan 
+[3,   103] loss: nan 
+[3,   106] loss: nan 
+[3,   109] loss: nan 
+[3,   112] loss: nan 
+[3,   115] loss: nan 
+[3,   118] loss: nan 
+[3,   121] loss: nan 
+[3,   124] loss: nan 
+[3,   127] loss: nan 
+[3,   130] loss: nan 
+[3,   133] loss: nan 
+[3,   136] loss: nan 
+[3,   139] loss: nan 
+[3,   142] loss: nan 
+[3,   145] loss: nan 
+[3,   148] loss: nan 
+[3,   151] loss: nan 
+[3,   154] loss: nan 
+[3,   157] loss: nan 
+[3,   160] loss: nan 
+[3,   163] loss: nan 
+[3,   166] loss: nan 
+[3,   169] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl
+[3,     1] loss: nan 
+[3,     4] loss: nan 
+[3,     7] loss: nan 
+[3,    10] loss: nan 
+[3,    13] loss: nan 
+[3,    16] loss: nan 
+[3,    19] loss: nan 
+[3,    22] loss: nan 
+[3,    25] loss: nan 
+[3,    28] loss: nan 
+[3,    31] loss: nan 
+[3,    34] loss: nan 
+[3,    37] loss: nan 
+[3,    40] loss: nan 
+[3,    43] loss: nan 
+[3,    46] loss: nan 
+[3,    49] loss: nan 
+[3,    52] loss: nan 
+[3,    55] loss: nan 
+[3,    58] loss: nan 
+[3,    61] loss: nan 
+[3,    64] loss: nan 
+[3,    67] loss: nan 
+[3,    70] loss: nan 
+[3,    73] loss: nan 
+[3,    76] loss: nan 
+[3,    79] loss: nan 
+[3,    82] loss: nan 
+[3,    85] loss: nan 
+[3,    88] loss: nan 
+[3,    91] loss: nan 
+[3,    94] loss: nan 
+[3,    97] loss: nan 
+[3,   100] loss: nan 
+[3,   103] loss: nan 
+[3] Epoch loss: nan 
+Time taken for 3 epoch : 736.8704454898834
+
+
+ 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl
+[4,     1] loss: nan 
+[4,     4] loss: nan 
+[4,     7] loss: nan 
+[4,    10] loss: nan 
+[4,    13] loss: nan 
+[4,    16] loss: nan 
+[4,    19] loss: nan 
+[4,    22] loss: nan 
+[4,    25] loss: nan 
+[4,    28] loss: nan 
+[4,    31] loss: nan 
+[4,    34] loss: nan 
+[4,    37] loss: nan 
+[4,    40] loss: nan 
+[4,    43] loss: nan 
+[4,    46] loss: nan 
+[4,    49] loss: nan 
+[4,    52] loss: nan 
+[4,    55] loss: nan 
+[4,    58] loss: nan 
+[4,    61] loss: nan 
+[4,    64] loss: nan 
+[4,    67] loss: nan 
+[4,    70] loss: nan 
+[4,    73] loss: nan 
+[4,    76] loss: nan 
+[4,    79] loss: nan 
+[4,    82] loss: nan 
+[4,    85] loss: nan 
+[4,    88] loss: nan 
+[4,    91] loss: nan 
+[4,    94] loss: nan 
+[4,    97] loss: nan 
+[4,   100] loss: nan 
+[4,   103] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_7.pkl
+[4,     1] loss: nan 
+[4,     4] loss: nan 
+[4,     7] loss: nan 
+[4,    10] loss: nan 
+[4,    13] loss: nan 
+[4,    16] loss: nan 
+[4,    19] loss: nan 
+[4,    22] loss: nan 
+[4,    25] loss: nan 
+[4,    28] loss: nan 
+[4,    31] loss: nan 
+[4,    34] loss: nan 
+[4,    37] loss: nan 
+[4,    40] loss: nan 
+[4,    43] loss: nan 
+[4,    46] loss: nan 
+[4,    49] loss: nan 
+[4,    52] loss: nan 
+[4,    55] loss: nan 
+[4,    58] loss: nan 
+[4,    61] loss: nan 
+[4,    64] loss: nan 
+[4,    67] loss: nan 
+[4,    70] loss: nan 
+[4,    73] loss: nan 
+[4,    76] loss: nan 
+[4,    79] loss: nan 
+[4,    82] loss: nan 
+[4,    85] loss: nan 
+[4,    88] loss: nan 
+[4,    91] loss: nan 
+[4,    94] loss: nan 
+[4,    97] loss: nan 
+[4,   100] loss: nan 
+[4,   103] loss: nan 
+[4,   106] loss: nan 
+[4,   109] loss: nan 
+[4,   112] loss: nan 
+[4,   115] loss: nan 
+[4,   118] loss: nan 
+[4,   121] loss: nan 
+[4,   124] loss: nan 
+[4,   127] loss: nan 
+[4,   130] loss: nan 
+[4,   133] loss: nan 
+[4,   136] loss: nan 
+[4,   139] loss: nan 
+[4,   142] loss: nan 
+[4,   145] loss: nan 
+[4,   148] loss: nan 
+[4,   151] loss: nan 
+[4,   154] loss: nan 
+[4,   157] loss: nan 
+[4,   160] loss: nan 
+[4,   163] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_4.pkl
+[4,     1] loss: nan 
+[4,     4] loss: nan 
+[4,     7] loss: nan 
+[4,    10] loss: nan 
+[4,    13] loss: nan 
+[4,    16] loss: nan 
+[4,    19] loss: nan 
+[4,    22] loss: nan 
+[4,    25] loss: nan 
+[4,    28] loss: nan 
+[4,    31] loss: nan 
+[4,    34] loss: nan 
+[4,    37] loss: nan 
+[4,    40] loss: nan 
+[4,    43] loss: nan 
+[4,    46] loss: nan 
+[4,    49] loss: nan 
+[4,    52] loss: nan 
+[4,    55] loss: nan 
+[4,    58] loss: nan 
+[4,    61] loss: nan 
+[4,    64] loss: nan 
+[4,    67] loss: nan 
+[4,    70] loss: nan 
+[4,    73] loss: nan 
+[4,    76] loss: nan 
+[4,    79] loss: nan 
+[4,    82] loss: nan 
+[4,    85] loss: nan 
+[4,    88] loss: nan 
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_10.pkl
+[4,     1] loss: nan 
+[4,     4] loss: nan 
+[4,     7] loss: nan 
+[4,    10] loss: nan 
+[4,    13] loss: nan 
+[4,    16] loss: nan 
+[4,    19] loss: nan 
+[4,    22] loss: nan 
+[4,    25] loss: nan 
+[4,    28] loss: nan 
+[4,    31] loss: nan 
+[4,    34] loss: nan 
+[4,    37] loss: nan 
+[4,    40] loss: nan 
+[4,    43] loss: nan 
+[4,    46] loss: nan 
+[4,    49] loss: nan 
+[4,    52] loss: nan 
+[4,    55] loss: nan 
+[4,    58] loss: nan 
+[4,    61] loss: nan 
+[4,    64] loss: nan 
+[4,    67] loss: nan 
+[4,    70] loss: nan 
+[4,    73] loss: nan 
+[4,    76] loss: nan 
+[4,    79] loss: nan 
+[4,    82] loss: nan 
+[4,    85] loss: nan 
+[4,    88] loss: nan 
+[4,    91] loss: nan 
+[4,    94] loss: nan 
+[4,    97] loss: nan 
+[4,   100] loss: nan 
+[4,   103] loss: nan 
+[4,   106] loss: nan 
+[4,   109] loss: nan 
+[4,   112] loss: nan 
+[4,   115] loss: nan 
+[4,   118] loss: nan 
+[4,   121] loss: nan 
+[4,   124] loss: nan 
+[4,   127] loss: nan 
+[4,   130] loss: nan 
+[4,   133] loss: nan 
+[4,   136] loss: nan 
+[4,   139] loss: nan 
+[4,   142] loss: nan 
+[4,   145] loss: nan 
+[4] Epoch loss: nan 
+Time taken for 4 epoch : 784.1012897491455
+
+
+ 
+Calculating train accuracy....
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 2
+Accuracy=0.6923076923076923
+Correctly classified :  72
+Incorrectly classified 32
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_4.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 1
+Accuracy=0.5773195876288659
+Correctly classified :  112
+Incorrectly classified 82
+
+
+
+
+
+Accuracy=0.5773195876288659
+Correctly classified :  112
+Incorrectly classified 82
+Confusion matrix
+ tensor([[40.,  0.],
+        [50.,  0.]])
+Class 0
+TP 40.0, TN 0.0, FP 50.0, FN 0.0
+Sensitivity: tensor(1.)
+Specificity: tensor(0.)
+Precision: tensor(0.4444)
+Recall: tensor(1.)
+F-Measure: tensor(0.6154)
+Class 1
+TP 0.0, TN 40.0, FP 0.0, FN 50.0
+Sensitivity: tensor(0.)
+Specificity: tensor(0.8000)
+Precision: tensor(nan)
+Recall: tensor(0.)
+F-Measure: tensor(nan)
+Calculating test accuracy....
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_5.pkl
+Batch 1
+Accuracy=0.5280898876404494
+Correctly classified :  47
+Incorrectly classified 42
+
+
+
+
+
+Accuracy=0.5280898876404494
+Correctly classified :  47
+Incorrectly classified 42
