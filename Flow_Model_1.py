@@ -677,8 +677,8 @@ for epoch in range(100):  # loop over the dataset multiple times
     s2 = time.time()    
     print(f"Time taken for {epoch + 1} epoch : {s2-s1}\n\n\n ")
 
-    dump("FlowModel.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V2/FlowModel_{offset + epoch + 1}.pkl",flow)
-    dump_pickle("FlowModelLoss.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V2/FlowModel_Loss_{offset + epoch + 1}.pkl",loss)
+    dump("FlowModel.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V3/FlowModel_{offset + epoch + 1}.pkl",flow)
+    dump_pickle("FlowModelLoss.pkl",f"Final_Binary_Classification_Dataset/Flow_Model_V3/FlowModel_Loss_{offset + epoch + 1}.pkl",loss)
     plot_loss(t)
     
     if((epoch+1)%4 == 0):
