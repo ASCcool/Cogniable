@@ -1,0 +1,1371 @@
+Training data:  ['Final_Combined_Model_Dataset/Modified_data_flow_V2/train_1.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_10.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_2.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_3.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_4.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_5.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_6.pkl']
+Validation data:  ['Final_Combined_Model_Dataset/Modified_data_flow_V2/train_7.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_8.pkl', 'Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl']
+No of training data:  7
+No of validation data:  3
+513
+Final_Binary_Classification_Dataset/Flow_Model_V6/FlowModel_513.pkl
+Model State Dict: I3D(
+  (features): Sequential(
+    (0): BasicConv3d(
+      (conv): Conv3d(2, 64, kernel_size=(7, 7, 7), stride=(2, 2, 2), padding=(3, 3, 3), bias=False)
+      (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (1): MaxPool3d(kernel_size=(1, 3, 3), stride=(1, 2, 2), padding=(0, 1, 1), dilation=1, ceil_mode=False)
+    (2): BasicConv3d(
+      (conv): Conv3d(64, 64, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+      (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): BasicConv3d(
+      (conv): Conv3d(64, 192, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+      (bn): BatchNorm3d(192, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (4): MaxPool3d(kernel_size=(1, 3, 3), stride=(1, 2, 2), padding=(0, 1, 1), dilation=1, ceil_mode=False)
+    (5): Mixed_3b(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(192, 64, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(192, 96, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(96, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(96, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(192, 16, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(16, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(16, 32, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(32, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(192, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(32, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (6): Mixed_3c(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(256, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(256, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(128, 192, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(192, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(256, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(32, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(32, 96, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(96, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(256, 64, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (7): MaxPool3d(kernel_size=(3, 3, 3), stride=(2, 2, 2), padding=(1, 1, 1), dilation=1, ceil_mode=False)
+    (8): Mixed_4b(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(480, 192, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(192, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(480, 96, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(96, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(96, 208, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(208, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(480, 16, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(16, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(16, 48, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(48, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(480, 64, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (9): Mixed_4c(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 160, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(160, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 112, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(112, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(112, 224, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(224, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 24, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(24, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(24, 64, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(512, 64, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (10): Mixed_4d(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(128, 256, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(256, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 24, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(24, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(24, 64, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(512, 64, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (11): Mixed_4e(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 112, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(112, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 144, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(144, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(144, 288, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(288, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(512, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(32, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(32, 64, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(512, 64, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(64, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (12): Mixed_4f(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(528, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(256, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(528, 160, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(160, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(160, 320, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(320, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(528, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(32, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(32, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(528, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (13): MaxPool3d(kernel_size=(2, 2, 2), stride=(2, 2, 2), padding=(0, 0, 0), dilation=1, ceil_mode=False)
+    (14): Mixed_5b(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(832, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(256, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(832, 160, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(160, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(160, 320, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(320, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(832, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(32, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(32, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (15): Mixed_5c(
+      (branch0): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(832, 384, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(384, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch1): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(832, 192, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(192, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(192, 384, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(384, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch2): Sequential(
+        (0): BasicConv3d(
+          (conv): Conv3d(832, 48, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(48, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicConv3d(
+          (conv): Conv3d(48, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (branch3): Sequential(
+        (0): MaxPool3d(kernel_size=(3, 3, 3), stride=1, padding=1, dilation=1, ceil_mode=False)
+        (1): BasicConv3d(
+          (conv): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (bn): BatchNorm3d(128, eps=0.001, momentum=0.001, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+    )
+    (16): AvgPool3d(kernel_size=(2, 7, 7), stride=1, padding=0)
+    (17): Dropout3d(p=0.5, inplace=False)
+    (18): Conv3d(1024, 2, kernel_size=(1, 1, 1), stride=(1, 1, 1))
+  )
+  (sigmoid): Sigmoid()
+)
+Calculating train accuracy....
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_4.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 4
+Accuracy=0.4444444444444444
+Correctly classified :  40
+Incorrectly classified 50
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_3.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 3
+Accuracy=0.4126984126984127
+Correctly classified :  78
+Incorrectly classified 111
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_10.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 1
+Accuracy=0.23353293413173654
+Correctly classified :  78
+Incorrectly classified 256
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_2.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 2
+Accuracy=0.3142857142857143
+Correctly classified :  121
+Incorrectly classified 264
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_5.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 5
+Accuracy=0.35443037974683544
+Correctly classified :  168
+Incorrectly classified 306
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_6.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 6
+Accuracy=0.3777038269550749
+Correctly classified :  227
+Incorrectly classified 374
+
+
+
+
+
+Accuracy=0.3777038269550749
+Correctly classified :  227
+Incorrectly classified 374
+No of samples: 601
+Confusion matrix
+ tensor([[227.,   0.],
+        [374.,   0.]])
+Class 0
+TP 227.0, TN 0.0, FP 374.0, FN 0.0
+Sensitivity: tensor(1.)
+Specificity: tensor(0.)
+Precision: tensor(0.3777)
+Recall: tensor(1.)
+F-Measure: tensor(0.5483)
+Class 1
+TP 0.0, TN 227.0, FP 0.0, FN 374.0
+Sensitivity: tensor(0.)
+Specificity: tensor(0.6070)
+Precision: tensor(nan)
+Recall: tensor(0.)
+F-Measure: tensor(nan)
+Calculating test accuracy....
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_9.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 2
+Accuracy=0.6923076923076923
+Correctly classified :  72
+Incorrectly classified 32
+Final_Combined_Model_Dataset/Modified_data_flow_V2/train_8.pkl
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+[tensor(nan), tensor(nan)]
+Batch 1
+Accuracy=0.551094890510949
+Correctly classified :  151
+Incorrectly classified 123
+
+
+
+
+
+Accuracy=0.551094890510949
+Correctly classified :  151
+Incorrectly classified 123
+No of samples: 274
+Confusion matrix
+ tensor([[151.,   0.],
+        [123.,   0.]])
+Class 0
+TP 151.0, TN 0.0, FP 123.0, FN 0.0
+Sensitivity: tensor(1.)
+Specificity: tensor(0.)
+Precision: tensor(0.5511)
+Recall: tensor(1.)
+F-Measure: tensor(0.7106)
+Class 1
+TP 0.0, TN 151.0, FP 0.0, FN 123.0
+Sensitivity: tensor(0.)
+Specificity: tensor(1.2276)
+Precision: tensor(nan)
+Recall: tensor(0.)
+F-Measure: tensor(nan)
